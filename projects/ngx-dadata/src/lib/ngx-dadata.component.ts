@@ -47,7 +47,7 @@ export class NgxDadataComponent implements OnInit {
   }
 
   getItemDisplayName(item: DadataSuggestion) {
-    return item ? item.value : undefined;
+    return item ? item.value : '';
   }
 
   itemSelected(item: DadataSuggestion): void {
