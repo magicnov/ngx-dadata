@@ -1,5 +1,5 @@
-import {DadataConfigDefault} from './dadata-config';
-import {DadataType} from '../public-api';
+import { DadataConfigDefault } from './dadata-config';
+import { DadataType } from '../public-api';
 
 describe('ngx-dadata-config', () => {
   it('should have sensible default values', () => {

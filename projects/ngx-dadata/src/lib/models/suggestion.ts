@@ -1,4 +1,4 @@
-import {DadataAddress, DadataBank, DadataEmail, DadataFIO, DadataParty} from './data';
+import { DadataAddress, DadataBank, DadataEmail, DadataFIO, DadataParty } from './data';
 
 export interface DadataSuggestion {
   value: string;

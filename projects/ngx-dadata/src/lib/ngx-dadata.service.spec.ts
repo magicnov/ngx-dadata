@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
 import { NgxDadataService } from './ngx-dadata.service';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('NgxDadataService', () => {
   beforeEach(() => TestBed.configureTestingModule({
     imports: [ HttpClientModule ],
-    providers: [NgxDadataService]
+    providers: [ NgxDadataService ]
   }));
 
   it('should be created', () => {
