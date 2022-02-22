@@ -1,4 +1,4 @@
-import {DadataType} from './ngx-dadata.service';
+import { DadataType } from './ngx-dadata.service';
 
 export interface Location {
   country?: string;
