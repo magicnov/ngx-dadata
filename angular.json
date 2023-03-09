@@ -160,6 +160,16 @@
   "defaultProject": "ngx-dadata-app",
   "cli": {
     "analytics": "325ac4a0-1098-4d39-bc46-efee81d4c767",
-    "defaultCollection": "@angular-eslint/schematics"
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
+  },
+  "schematics": {
+    "@angular-eslint/schematics:application": {
+      "setParserOptionsProject": true
+    },
+    "@angular-eslint/schematics:library": {
+      "setParserOptionsProject": true
+    }
   }
 }
