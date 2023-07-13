@@ -1,20 +1,18 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { NgxDadataComponent } from './ngx-dadata.component';
-import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { NgxDadataComponent } from "./ngx-dadata.component";
+import { HttpClientModule } from "@angular/common/http";
+import { FormsModule } from "@angular/forms";
 
-
-describe('NgxDadataComponent', () => {
+describe("NgxDadataComponent", () => {
   let component: NgxDadataComponent;
   let fixture: ComponentFixture<NgxDadataComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NgxDadataComponent ],
-      imports: [ FormsModule, HttpClientModule ],
-    })
-    .compileComponents();
+      declarations: [NgxDadataComponent],
+      imports: [FormsModule, HttpClientModule],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -23,7 +21,7 @@ describe('NgxDadataComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

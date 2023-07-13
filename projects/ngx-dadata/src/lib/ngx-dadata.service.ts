@@ -1,38 +1,41 @@
-import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { DadataResponse } from './models/dadata-response';
-import { DadataConfig } from './dadata-config';
+import { Injectable } from "@angular/core";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
+import { Observable } from "rxjs";
+import { DadataResponse } from "./models/dadata-response";
+import { DadataConfig } from "./dadata-config";
 
 export enum DadataType {
-  fio = 'fio',
-  address = 'address',
-  party = 'party',
-  bank = 'bank',
-  email = 'email'
+  fio = "fio",
+  address = "address",
+  party = "party",
+  bank = "bank",
+  email = "email",
 }
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class NgxDadataService {
-  apiKey = '';
+  apiKey = "";
 
-  constructor(private http: HttpClient) {
-  }
+  constructor(private http: HttpClient) {}
 
   setApiKey(key: string) {
     this.apiKey = key;
   }
 
   // eslint-disable-next-line max-len
-  getData(value: string, type: DadataType = DadataType.address, config: DadataConfig): Observable<DadataResponse> {
+  getData(
+    value: string,
+    type: DadataType = DadataType.address,
+    config: DadataConfig
+  ): Observable<DadataResponse> {
     const httpOptions = {
       headers: new HttpHeaders({
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-        Authorization: 'Token ' + this.apiKey,
-      })
+        Accept: "application/json",
+        "Content-Type": "application/json",
+        Authorization: "Token " + this.apiKey,
+      }),
     };
     const body = Object.assign(
       {},
@@ -43,6 +46,10 @@ export class NgxDadataService {
       { from_bound: config?.bounds?.fromBound },
       { to_bound: config?.bounds?.toBound }
     );
-    return this.http.post<DadataResponse>('https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/' + type, body, httpOptions);
+    return this.http.post<DadataResponse>(
+      "https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/" + type,
+      body,
+      httpOptions
+    );
   }
 }

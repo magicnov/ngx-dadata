@@ -1,4 +1,4 @@
-import { DadataSuggestion } from './suggestion';
+import { DadataSuggestion } from "./suggestion";
 
 export interface DadataResponse {
   suggestions: DadataSuggestion[];

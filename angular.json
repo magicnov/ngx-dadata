@@ -68,9 +68,7 @@
               "projects/ngx-dadata-app/src/favicon.ico",
               "projects/ngx-dadata-app/src/assets"
             ],
-            "styles": [
-              "projects/ngx-dadata-app/src/styles.scss"
-            ],
+            "styles": ["projects/ngx-dadata-app/src/styles.scss"],
             "scripts": [],
             "vendorChunk": true,
             "extractLicenses": false,
@@ -136,9 +134,7 @@
               "projects/ngx-dadata-app/src/favicon.ico",
               "projects/ngx-dadata-app/src/assets"
             ],
-            "styles": [
-              "projects/ngx-dadata-app/src/styles.scss"
-            ],
+            "styles": ["projects/ngx-dadata-app/src/styles.scss"],
             "scripts": []
           }
         },
@@ -160,9 +156,7 @@
   "defaultProject": "ngx-dadata-app",
   "cli": {
     "analytics": "325ac4a0-1098-4d39-bc46-efee81d4c767",
-    "schematicCollections": [
-      "@angular-eslint/schematics"
-    ]
+    "schematicCollections": ["@angular-eslint/schematics"]
   },
   "schematics": {
     "@angular-eslint/schematics:application": {

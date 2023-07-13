@@ -80,9 +80,7 @@ export interface DadataAddress {
   qc_geo: string | null;
   qc_complete: string | null;
   qc_house: string | null;
-  history_values: [
-    string | null
-    ];
+  history_values: [string | null];
   unparsed_parts: string | null;
   source: string | null;
   qc: string | null;
@@ -93,7 +91,7 @@ export interface DadataParty {
   capital: string | null;
   management: {
     name: string | null;
-    post: string | null
+    post: string | null;
   };
   founders: string | null;
   managers: string | null;
@@ -107,20 +105,20 @@ export interface DadataParty {
     status: string | null;
     actuality_date: number | null;
     registration_date: number | null;
-    liquidation_date: null
+    liquidation_date: null;
   };
   opf: {
     type: string | null;
     code: string | null;
     full: string | null;
-    short: string | null
+    short: string | null;
   };
   name: {
     full_with_opf: string | null;
     short_with_opf: string | null;
-    latinstring: | null;
+    latinstring: null;
     full: string | null;
-    short: string | null
+    short: string | null;
   };
   inn: string | null;
   ogrn: string | null;
@@ -145,12 +143,12 @@ export interface DadataBank {
   opf: {
     type: string | null;
     full: string | null;
-    short: string | null
+    short: string | null;
   };
   name: {
     payment: string | null;
     full: string | null;
-    short: string | null
+    short: string | null;
   };
   bic: string | null;
   swift: string | null;
@@ -161,12 +159,12 @@ export interface DadataBank {
     opf: {
       type: string | null;
       full: string | null;
-      short: string | null
+      short: string | null;
     };
     name: {
       payment: string | null;
       full: string | null;
-      short: string | null
+      short: string | null;
     };
     bic: string | null;
     swift: string | null;
@@ -177,27 +175,27 @@ export interface DadataBank {
     address: {
       value: string | null;
       unrestricted_value: string | null;
-      data: string | null
+      data: string | null;
     };
     phone: string | null;
     state: {
       status: string | null;
       actuality_date: number | null;
       registration_date: number | null;
-      liquidation_date: string | null
-    }
+      liquidation_date: string | null;
+    };
   };
   address: {
     value: string | null;
     unrestricted_value: string | null;
-    data: DadataAddress
+    data: DadataAddress;
   };
   phone: string | null;
   state: {
     status: string | null;
     actuality_date: number | null;
     registration_date: number | null;
-    liquidation_date: string | null
+    liquidation_date: string | null;
   };
 }
 

@@ -11,20 +11,11 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2017",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "lib": [
-      "es2020",
-      "dom"
-    ],
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2020", "dom"],
     "paths": {
-      "@kolkov/ngx-dadata": [
-        "dist/ngx-dadata"
-      ],
-      "@kolkov/ngx-dadata/*": [
-        "dist/ngx-dadata/*"
-      ]
+      "@kolkov/ngx-dadata": ["dist/ngx-dadata"],
+      "@kolkov/ngx-dadata/*": ["dist/ngx-dadata/*"]
     },
     "useDefineForClassFields": false
   },
